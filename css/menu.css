@@ -1,6 +1,6 @@
 
 #cssmenu {
-  background: #161616;
+  background: #044E70;
   width: auto;
   padding: 0;
   line-height: 1;
@@ -66,7 +66,7 @@
   height: 10px;
   width: 10px;
   border-radius: 5px;
-  background: #000000;
+  background: #044E70;
   z-index: 1;
   top: 13px;
   right: 15px;
@@ -241,6 +241,16 @@
 #cssmenu > ul > li > ul > li {
   width: 170px;
   display: block;
+}
+#signature{
+  width: 25%;
+  border-radius: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
 }
 @media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
 	#cssmenu{background: #161616;}
