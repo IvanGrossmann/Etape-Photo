@@ -27,12 +27,15 @@ input, textarea, select {margin:0; padding:0px;}
 	width: 150px;
 }
 
-#map h2, #contact h2{
+#map h2, #contact h2, .titrePortrait{
 	font-size: 22px;
     display: block;
     text-transform: uppercase;
 	font-weight: 500;
 	margin: 30px 0;
+}
+.titrePortrait{
+	text-align: center;
 }
 .tel{
 	margin-bottom: 15px;
@@ -265,4 +268,60 @@ a.button:hover{background-color: #333;}
 /* ---------------------------------------------------------------------------- */
 .maps iframe{
     pointer-events: none;
+}
+#slider1, #slider2,#slider3, #slider4, #slider5 {
+    position: relative;
+    max-width: 1200px;
+    overflow: hidden;
+	height: 500px;
+	margin: 0 auto;
+}
+#slides1, #slides2,#slides3, #slides4,#slides5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+	height: 500px;
+	animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#slides1:hover, #slides2:hover,#slides3:hover, #slides4:hover,#slides5:hover {
+    animation-play-state: paused;
+}
+#slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+    display: inline-block;
+    width: 800px;
+    max-height: 500px;
+    margin: 0;
+}
+
+#slides1 figure img, #slides2 figure img,#slides3 figure img, #slides4 figure img,#slides5 figure img {
+    width: 800px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides1 figure figcaption, #slides2 figure figcaption,#slides3 figure figcaption, #slides4 figure figcaption,#slides5 figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
 }
