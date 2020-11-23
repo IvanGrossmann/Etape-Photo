@@ -32,10 +32,11 @@ input, textarea, select {margin:0; padding:0px;}
     display: block;
     text-transform: uppercase;
 	font-weight: 500;
-	margin: 30px 0;
+    margin: 30px 0;
 }
 .titrePortrait{
-	text-align: center;
+    text-align: center;
+    text-decoration: underline;
 }
 .tel{
 	margin-bottom: 15px;
@@ -111,7 +112,7 @@ header{text-align: center;background: #fff;}
 @media(max-width:767px){
 	 .logo{padding: 30px 0 20px;}
 	 .logo a{font-size: 65px;}
-	 .logo span{font-size: 16px;}
+	 .logo span{font-size: 22px;}
 }
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Container------------------------------ */
@@ -271,7 +272,7 @@ a.button:hover{background-color: #333;}
 }
 #slider1, #slider2,#slider3, #slider4, #slider5 {
     position: relative;
-    max-width: 1200px;
+    max-width: 800px;
     overflow: hidden;
 	height: 500px;
 	margin: 0 auto;
@@ -319,9 +320,138 @@ a.button:hover{background-color: #333;}
         left: 0; /*1ère image*/
     }
     35%, 50% {
-        left: -100vw; /*2ème image*/
+        left: -800px; /*2ème image*/
     }
     70%, 95% {
-        left: -200vw; /*3ème image*/
+        left: -1600px; /*3ème image*/
     }
 }
+@media only screen and (min-device-width : 280px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 280px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -280px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -560px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 320px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 320px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -320px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -640px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 360px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 360px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -360px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -720px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 375px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 375px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -375px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -750px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 411px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 411px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -411px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -822px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 540px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 540px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -540px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -1080px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 768px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 768px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -768px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -1536px; /*3ème image*/
+        }
+    }
+}
+@media only screen and (min-device-width : 1024px) {
+    #slides1 figure, #slides2 figure,#slides3 figure, #slides4 figure,#slides5 figure {
+        width: 1024px;
+    }
+    @keyframes slide {
+        0%, 20%, 100% {
+            left: 0; /*1ère image*/
+        }
+        35%, 50% {
+            left: -1024px; /*2ème image*/
+        }
+        70%, 95% {
+            left: -2048px; /*3ème image*/
+        }
+    }
+}
+
